@@ -11,10 +11,10 @@ public class JDBCUpdateDemo {
 
 	
 	//ORACLE
-		//private static String url = "jdbc:oracle:thin:@localhost:1521:XE";
-		
-		//MYSql
-		private static String url = "jdbc:mysql://localhost:3306/avcoconsulting";
+	//private static String url = "jdbc:oracle:thin:@localhost:1521:XE";
+	
+	//MYSql
+	private static String url = "jdbc:mysql://localhost:3306/avcoconsulting";
 
 	/**
 	 * @param args
