@@ -3,18 +3,22 @@ package org.avco.constructor;
 
 public class User {
 
-	private String firstName;
+	private String firstName ;
 	private String lastName;
 	private String ssn;
-	
 
 	public User(){
 		
 	}
 
+	public User(String firstName,String lastName,String ssn){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.ssn = ssn;
+	}
 
 	public String getFirstName() {
-		return firstName;
+		return this.firstName;
 	}
 
 
@@ -34,15 +38,16 @@ public class User {
 		this.lastName = lastName;
 	}
 
-
 	public String getSsn() {
 		return ssn;
 	}
 
-
-	 void setSsn(String ssn) {
+	public void setSsn(String ssn) {
 		this.ssn = ssn;
 	}
+
+
+	
 	
 	/*public User(String firstName,String lastName,String ssn){
 		this.firstName = firstName;
