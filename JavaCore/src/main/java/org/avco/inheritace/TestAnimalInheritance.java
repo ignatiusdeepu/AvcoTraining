@@ -33,7 +33,6 @@ public class TestAnimalInheritance {
 		obj2.setNoOfLegs(4);
 		System.out.println(obj2.getNoOfLegs());
 		obj2.sound();
-		//obj2.print();
 		
 		
 	}
