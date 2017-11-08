@@ -1,6 +1,6 @@
 package org.avco.interfaces;
 
-public class Cat extends org.avco.inheritace.Animal implements Animal,Entity,Entity1 {
+public class Cat  implements Animal{
 
 	public void print() {
 		// TODO Auto-generated method stub
@@ -9,7 +9,7 @@ public class Cat extends org.avco.inheritace.Animal implements Animal,Entity,Ent
 
 	public void sound() {
 		// TODO Auto-generated method stub
-
+		System.out.println("Cat sound");
 	}
 /*
 	public void sound1() {

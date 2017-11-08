@@ -6,6 +6,7 @@ public class LEEx3 {
 
 		Car car = (wheels) -> "Car with "+wheels+" is moving";
 		System.out.println(car.move(4));
+		
 	}
 
 }

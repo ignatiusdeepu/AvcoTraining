@@ -4,8 +4,8 @@ public class ApplicationException extends Exception {
 
 	private String errorCode;
 	
-	public ApplicationException(String message,String errorCode){
-		super(message);
+	public ApplicationException(String msg,String errorCode){
+		super(msg);
 		this.errorCode = errorCode;
 	}
 	

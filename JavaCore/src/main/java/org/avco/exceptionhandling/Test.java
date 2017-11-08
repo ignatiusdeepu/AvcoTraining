@@ -2,6 +2,7 @@ package org.avco.exceptionhandling;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.ExecutorCompletionService;
 
 import org.avco.constructor.User;
 
@@ -14,6 +15,8 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
+			User x = null;
+			//x.getFirstName();
 			User user = new User();
 			user.setLastName("fsdhga");
 			validateUser(user);
@@ -28,10 +31,7 @@ public class Test {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			
-		}/*catch(ApplicationException e){
-			System.out.println();
-		}*/ catch (ApplicationException e) {
-			// TODO Auto-generated catch block
+		}catch(Exception e){
 			e.printStackTrace();
 		}
 		

@@ -30,16 +30,16 @@ public class JDBCInsertDemo {
 			//2. Obtain the connection.
 			connection=DriverManager.getConnection(url,"root","");
 			
-			StringBuffer sb = new StringBuffer("INSERT INTO EMPLOYEE(ID,FIRST_NAME,LAST_NAME,ssn)");
-			sb.append(" VALUES (?,?,?,?)");
+			StringBuffer sb = new StringBuffer("INSERT INTO EMPLOYEE(FIRST_NAME,LAST_NAME,ssn)");
+			sb.append(" VALUES (?,?,?)");
 
 			//3. Create a statement.
 			statement = connection.prepareStatement(sb.toString());
 			 //int i = statement2.executeUpdate(sb.toString());
-			statement.setInt(1, 2);
-			statement.setString(2, "John");
-			statement.setString(3, "Doe");
-			statement.setString(4, "123456789");
+			//statement.setInt(1, 2);
+			statement.setString(1, "John");
+			statement.setString(2, "Doe");
+			statement.setString(3, "123456789");
 			//4. execute the statement.
 			int i = statement.executeUpdate();
 			//5.Iterate thru the resultset.
