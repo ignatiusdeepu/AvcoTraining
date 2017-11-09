@@ -8,10 +8,6 @@ public class NonGenericDemo {
 	public static void main(String[] args) {
 		Triangle triangle = new Triangle();
 		Draw draw = new Draw(triangle);
-		
-		//
-		//
-		//
 		Circle circle = (Circle)draw.getShape();
 		circle.draw();
 	}

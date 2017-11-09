@@ -16,7 +16,7 @@ public class ArraysDemo {
 		
 		User[] users = new User[3];
 		
-		for(int k = 0; k<4;k++){
+		for(int k = 0; k<6;k++){
 			users[k] = new User();
 			users[k].setLastName("test");
 		}

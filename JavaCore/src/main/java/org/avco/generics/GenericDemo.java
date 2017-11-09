@@ -12,6 +12,9 @@ public class GenericDemo {
 		
 		DrawGeneric<Triangle> traingle = new DrawGeneric<Triangle>(new Triangle());
 		traingle.getShape().draw();
+		
+		DrawGeneric<String> drwStr = new DrawGeneric<String>("hello");
+		System.out.println(drwStr.getShape().toString());
 	}
 
 }

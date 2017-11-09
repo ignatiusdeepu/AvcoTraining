@@ -16,12 +16,11 @@ public class MapDemo {
 		stringMap.put("PASSWORD", "123");
 		stringMap.put("ADDRESS", "129387892");
 		stringMap.put("CITY", "WORCESTOR");
-
 		Map<String,String> map2 = new HashMap<String, String>();
 		map2.put("COUNTRY", "US");
 		map2.put("FIRST_NAME", "AVCO123");
 		map2.put("LAST_NAME", "CONSULTING");
-		
+		stringMap.put("CITY", "ATLANTA");
 		stringMap.putAll(map2);
 		
 		if(stringMap.containsKey("USER_NAME")){

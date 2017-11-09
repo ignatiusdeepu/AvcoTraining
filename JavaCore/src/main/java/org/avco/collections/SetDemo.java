@@ -17,10 +17,12 @@ public class SetDemo {
 		integerSet.add(new Integer(20));
 		integerSet.add(new Integer(10));
 		integerSet.add(new Integer(30));
+		
 		//Integer l = (Integer)integerSet.get(0);
 		for(Integer elem :integerSet ){ //for(Classthesetcontains ref:setName)
 			System.out.println("Element Value :"+elem.intValue());
 		}
+		
 		Iterator<Integer> iterator = integerSet.iterator();
 		while(iterator.hasNext()){
 			System.out.println("Element Value :"+iterator.next().intValue());
