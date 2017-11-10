@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.avco.modulen.vo.Product;
 
@@ -33,6 +34,7 @@ public class Stream1 {
                 .map(q ->q.getPrice())        // fetching price  
                 .collect(Collectors.toList()); // collecting as list  
         System.out.println(productPriceList2);  
+        
         
         productsList.stream()  
         .filter(product -> product.getPrice() == 30000)  

@@ -6,6 +6,8 @@ public class LevelOneDemo {
 		LevelOne levelOne = LevelOne.HIGH;
 		System.out.println(levelOne);
 		
+		String str = new String("");
+		
 		switch(levelOne){
 			case  LOW : System.out.println(levelOne);
 			case  MEDIUM : System.out.println(levelOne);
